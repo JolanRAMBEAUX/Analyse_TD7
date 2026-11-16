@@ -6,6 +6,7 @@ participant Controleur as ctrl
 participant VoyantRouge as voyR
 participant VoyantVert as voyV
 participant Minuterie as minut
+participant BaseDonnees as BD
 participant Porte as port
 participant Alarme as alrm
 
@@ -32,7 +33,10 @@ deactivate minut
 ctrl -> voyR : eteint voyant rouge
 deactivate voyR
 
-ctrl -> port : code bon
+ctrl -> BD : verifie code
+BD -->o ctrl : code bon
+
+ctrl -> port : ouverture de la porte
 activate port
 port --> user : porte ouverte
 ctrl -> minut : met un minuteur de 20 seconde
