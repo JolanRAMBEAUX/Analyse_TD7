@@ -13,7 +13,6 @@ deactivate kBoard
 activate ctrl
 ctrl -> Acces : code bon
 activate Acces
-ctrl --> user : code pas bon
 deactivate ctrl
 Acces --> user : porte ouverte
 deactivate Acces
