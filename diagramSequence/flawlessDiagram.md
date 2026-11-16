@@ -34,7 +34,7 @@ ctrl -> voyR : eteint voyant rouge
 deactivate voyR
 
 ctrl -> BD : verifie code
-BD -->o ctrl : code bon
+BD o--> ctrl : code bon
 
 ctrl -> port : ouverture de la porte
 activate port
