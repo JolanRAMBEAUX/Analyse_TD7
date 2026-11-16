@@ -39,9 +39,13 @@ ctrl -> minut : met un minuteur de 20 seconde
 activate minut
 
 user -> port : ouvre, passe et ferme la porte
+ctrl -> minut : desactive le minuteur
 deactivate minut
+ctrl -> port : ferme la porte
 deactivate port
+ctrl -> voyV : desactive le voyant vert
 deactivate voyV
+ctrl -> voyR : reactive le voyant rouge
 activate voyR
 deactivate ctrl
 
